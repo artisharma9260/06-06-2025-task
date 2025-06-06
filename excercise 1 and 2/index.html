@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Exercises</title>
+</head>
+<body>
+
+  <h2>Exercise 1: Reverse a Number</h2>
+  <p id="reverseResult"></p>
+
+  <h2>Exercise 2: Alphabetize Letters in a String</h2>
+  <p id="alphabetResult"></p>
+
+  <script>
+    // Exercise 1: Reverse a number
+    function reverseNumber(num) {
+      let reversed = num.toString().split('').reverse().join('');
+      return parseInt(reversed);
+    }
+
+    let x = 32243;
+    document.getElementById("reverseResult").innerText = "Reversed Number: " + reverseNumber(x);
+
+    // Exercise 2: Alphabetize characters in a string
+    function alphabetOrder(str) {
+      return str.split('').sort().join('');
+    }
+
+    let inputString = "webmaster";
+    document.getElementById("alphabetResult").innerText = "Alphabetical Order: " + alphabetOrder(inputString);
+  </script>
+
+</body>
+</html>
